@@ -977,7 +977,7 @@ over the resulting document streams.
 
 Processing comes in two flavors: B<Simple Style> and B<Stream Style>:
 
-In a nutshell, 'simple style' is best used for those cases where you have a a single
+In a nutshell, 'simple style' is best used for those cases where you have a single
 Perl data structure that you want to convert to XML as quickly and painlessly as possible. 'Stream
 style' is more useful for cases where you are receiving chunks of data (like from a DBI handle)
 and you want to process those chunks as they appear. See B<PROCESSING METHODS> for more info about
@@ -1059,7 +1059,7 @@ When set to a defined value, this option blocks the generator from adding
 the top-level root element when parse() or parse_start() and parse_end()
 are called.
 
-I<Do not> use this option unless you absolutely sure you know what you
+I<Do not> use this option unless you are absolutely sure you know what you
 are doing and why, since the resulting event stream will most likely
 produce non-well-formed XML.
 
@@ -1265,7 +1265,7 @@ this subroutine and the sub is expected to return the new element name. In the c
 arrayrefs, no keyname will be passed, but you can still generate the name from scratch.
 
 Extending that idea, keymap will also accept a default mapping using the key '*' that will
-be applied to all elements that do have an explict mapping configured.
+be applied to all elements that do have an explicit mapping configured.
 
 To add new mappings or remove existing ones without having to reset the whole list of
 mappings, see add_keymap() and delete_keymap() respectively.
